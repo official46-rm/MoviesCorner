@@ -11,9 +11,13 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = """<b>Hᴇʏ {} ɪᴍ 『 Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ 』 ᴀ Pʀᴇᴍɪᴜᴍ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ.</b>
-    
-<i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>"""
+    START_TXT = """<b>Wᴇʟᴄᴏᴍᴇ ᴛᴏ Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ</b>
+
+Yᴏᴜʀ ᴅᴀɪʟʏ ᴅᴇsᴛɪɴᴀᴛɪᴏɴ ғᴏʀ ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs.
+Dɪsᴄᴏᴠᴇʀ ᴍᴏᴠɪᴇs ᴀɴᴅ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ.
+Sɪᴍᴘʟᴇ. Sᴍᴀʀᴛ. Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ.
+
+🌿 Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/RMdveloper4"><b>RMdeveloper4</b></a>"""
     HELP_TXT = """<b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     PRIVATEBOT_TXT = """<b>Tʜᴀɴᴋs Fᴏʀ Aᴅᴅɪɴɢ Mᴇ</b>
@@ -26,12 +30,12 @@ class script(object):
 <b>›› Eɴᴊᴏʏ !! Mᴏʀᴇ Iɴғᴏ Usᴇ Uɴᴅᴇʀ Bᴜᴛᴛᴏɴs</b>"""
     
     ABOUT_TXT = """🤖 ɴᴀᴍᴇ : <a href=https://t.me/{}><b>Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ Bᴏᴛ</b></a>
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/RMdveloper4><b>RMdveloper4</b></a>
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/RMdveloper4><b>RMdeveloper4</b></a>
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
 📡 ʜᴏsᴛɪɴɢ : Rᴇɴᴅᴇʀ / Kᴏʏᴇʙ
 📢 sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/RudraMoviez><b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>
-🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]\n</b></i>"""
+🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Rudra Moviez is customized from an open-source project. 
 - Original upstream source - https://github.com/EvamariaTG/EvaMaria  
