@@ -444,12 +444,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl')
             ],[
             InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
-            ],[
-            InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
-            ],[
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
-        ]]
+            InlineKeyboardButton('📢 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+YseewXx0p9Y4Y2Q1'),
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -479,7 +475,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🙄 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🙄', url='https://t.me/RMdveloper4'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
         ],[
-            InlineKeyboardButton('👩‍💻 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 👩‍💻', url='https://github.com/official46-rm/MoviesCorner'), #Please Change your bot username
+            InlineKeyboardButton('📢 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+YseewXx0p9Y4Y2Q1'),
             InlineKeyboardButton('😍 sʜᴀʀᴇ ᴍᴇ 😍', url=f'https://t.me/share/url?url=t.me/{temp.U_NAME}'),
         ],[
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')

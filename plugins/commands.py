@@ -48,12 +48,8 @@ async def start(client, message):
             InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl'),
             ],[
             InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
-            ],[
-            InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
-            ],[
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
-        ]]
+            InlineKeyboardButton('📢 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+YseewXx0p9Y4Y2Q1'),
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -98,12 +94,8 @@ async def start(client, message):
             InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl'),
             ],[
             InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
-            ],[
-            InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
-            ],[
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
-        ]]
+            InlineKeyboardButton('📢 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+YseewXx0p9Y4Y2Q1'),
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
