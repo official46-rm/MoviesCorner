@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = """<b>Hᴇʏ {} ɪᴍ 『 Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ 』 ᴀ ᴍᴏᴠɪᴇ ᴄᴀᴛᴀʟᴏɢ + sᴇᴀʀᴄʜ ʙᴏᴛ.</b>
+    START_TXT = """<b>Hᴇʏ {} ɪᴍ 『 Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ 』 ᴀ Pʀᴇᴍɪᴜᴍ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ.</b>
     
 <i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>"""
     HELP_TXT = """<b>𝙷𝙴𝚈 {}
@@ -21,29 +21,28 @@ class script(object):
 
 <b>›› Cʜᴀɴɢᴇ Sᴇᴛᴛɪɴɢ Fᴏʀ Uʀ Gʀᴏᴜᴘ Cʟɪᴄᴋ 👉 /connect </b>
 
-<b>›› I Wɪʟʟ Pʀᴏᴠɪᴅᴇ ᴄᴏɴᴛᴇɴᴛ ʏᴏᴜ ᴀʀᴇ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴛᴏ sʜᴀʀᴇ</b>
+<b>›› I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs/Sᴇʀɪᴇs Dᴏɴ'ᴛ Wᴏʀʀʏ</b>
 
 <b>›› Eɴᴊᴏʏ !! Mᴏʀᴇ Iɴғᴏ Usᴇ Uɴᴅᴇʀ Bᴜᴛᴛᴏɴs</b>"""
     
-    ABOUT_TXT = """🎬 ʙᴏᴛ ɴᴀᴍᴇ : <a href=https://t.me/{}><b>Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ</b></a>
-👨‍💻 ᴏᴡɴᴇʀ : ᴄᴏɴғɪɢᴜʀᴇ ᴏᴡɴᴇʀ ʟɪɴᴋ ɪɴ ʀᴇɴᴅᴇʀ
-📝 ʟᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ
-📚 ғʀᴀᴍᴇᴡᴏʀᴋ : Pʏʀᴏɢʀᴀᴍ
-☁️ ʜᴏsᴛɪɴɢ : Rᴇɴᴅᴇʀ / Kᴏʏᴇʙ
-🌟 ʙʀᴀɴᴅ : Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ
-
-<b>ᴜsᴇ ᴏɴʟʏ ᴄᴏɴᴛᴇɴᴛ ʏᴏᴜ ᴏᴡɴ ᴏʀ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ sʜᴀʀᴇ.</b>"""
+    ABOUT_TXT = """🤖 ɴᴀᴍᴇ : <a href=https://t.me/{}><b>Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ Bᴏᴛ</b></a>
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/RMdveloper4><b>RMdveloper4</b></a>
+📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
+📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
+📡 ʜᴏsᴛɪɴɢ : Rᴇɴᴅᴇʀ / Kᴏʏᴇʙ
+📢 sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/RudraMoviez><b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>
+🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0 [ ʙᴇᴛᴀ ]\n</b></i>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/EvamariaTG/EvaMaria  
+- Rudra Moviez is customized from an open-source project. 
+- Original upstream source - https://github.com/EvamariaTG/EvaMaria  
 <b>DEVS:</b>
-- <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
+- <a href=https://t.me/RMdveloper4>Rudra Moviez customization</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and Rudra Moviez will respond whenever a keyword is found in a message
+- Filter is the feature were users can set automated replies for a particular keyword and Rudra Moviez will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Rudra Moviez should have admin privillage.
+1. Rudra Moviez bot should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 

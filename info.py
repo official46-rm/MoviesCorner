@@ -32,17 +32,12 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "RudraMoviez")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', 'RudraMoviez')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'RudraMoviez_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'YourRudraSupport')
-UPDATE_CHANNEL = environ.get('UPDATE_CHANNEL', 'YourRudraUpdates')
-MOVIES_CHANNEL = environ.get('MOVIES_CHANNEL', 'YourAuthorizedContentChannel')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'YourTelegramUsername')
-REPO_URL = environ.get('REPO_URL', 'https://github.com/YOUR_GITHUB_USERNAME/RudraMoviezBot')
-DOWNLOAD_GUIDE_URL = environ.get('DOWNLOAD_GUIDE_URL', 'https://t.me/YourRudraSupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'RudraMoviez')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)

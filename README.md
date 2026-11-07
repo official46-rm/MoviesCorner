@@ -1,53 +1,69 @@
-# RUDRA MOVIEZ BOT
+<p align="center">
+  <img src="assets/Logo.jpg" alt="Rudra Moviez" width="260">
+</p>
 
-A customized Telegram catalogue/search bot built from the upstream open-source project. The original license and upstream credits are retained in this repository.
+<h1 align="center">Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ Bᴏᴛ</h1>
+<p align="center">Telegram Auto Filter • Search • Media Indexing</p>
 
-> Use this bot only for movies, videos, and other files that you own or are authorized to distribute.
+**Maintainer:** [@RMdveloper4](https://t.me/RMdveloper4)  
+**Updates:** [Rudra Movies](https://t.me/RudraMovies4)  
+**Support:** [Rudra Moviez](https://t.me/RudraMoviez)  
+**Movie catalogue:** [Open channel](https://t.me/+uMyc8ujUr3QzZTZl)  
+**Repository:** [https://github.com/official46-rm/MoviesCorner](https://github.com/official46-rm/MoviesCorner)
 
-## Branding
-- Display name: **Rᴜᴅʀᴀ Mᴏᴠɪᴇᴢ**
-- Typography: retained the original small-caps Telegram text style.
-- Hosting target: Render or Koyeb (Docker/Python worker).
+## Features
+- Telegram private-message search and auto-filter
+- Indexing of media from configured Telegram channels
+- Inline search and pagination
+- Optional force-subscribe channel
+- Admin commands, logs, and statistics
+- MongoDB-backed file and user data
+
+## Deployment (Render)
+1. Push the extracted project files (not the ZIP itself) to this repository.
+2. In Render, create a **Background Worker** from this GitHub repository.
+3. Select **Docker** as the runtime/build method.
+4. Add the environment variables listed below in Render.
+5. Deploy and inspect the service logs.
+
+Do not expose bot tokens, API hashes, or MongoDB connection strings in GitHub.
 
 ## Required environment variables
-Set these in Render/Koyeb; never commit tokens or database credentials to GitHub.
 
-| Variable | Purpose |
+| Variable | Description |
 |---|---|
-| `BOT_TOKEN` | Token from @BotFather |
-| `API_ID` | Telegram API ID from my.telegram.org |
-| `API_HASH` | Telegram API hash from my.telegram.org |
-| `ADMINS` | Telegram numeric user IDs, space-separated |
-| `LOG_CHANNEL` | Private log channel ID; add the bot as admin |
+| `BOT_TOKEN` | Token from Telegram @BotFather |
+| `API_ID` | Telegram API ID from `my.telegram.org` |
+| `API_HASH` | Telegram API hash from `my.telegram.org` |
+| `ADMINS` | Your numeric Telegram user ID |
+| `CHANNELS` | Source channel ID(s) to index; separate multiple IDs with spaces |
+| `LOG_CHANNEL` | Private log channel ID; make the bot an admin |
 | `DATABASE_URI` | MongoDB connection URI |
-| `DATABASE_NAME` | Database name, e.g. `RudraMoviez` |
-| `COLLECTION_NAME` | Collection name, e.g. `Rudra_files` |
-| `CHANNELS` | Source/catalogue channel IDs, space-separated |
+| `DATABASE_NAME` | Use `RudraMoviez` |
+
+## Optional environment variables
+
+| Variable | Default / purpose |
+|---|---|
+| `COLLECTION_NAME` | `RudraMoviez_files` |
+| `SUPPORT_CHAT` | `RudraMoviez` (username without `@`) |
 | `AUTH_CHANNEL` | Optional force-subscribe channel ID |
-| `SUPPORT_CHAT` | Your support channel/group username, without `@` |
-| `OWNER_USERNAME` | Your Telegram username, without `@` |
-| `UPDATE_CHANNEL` | Your updates channel username, without `@` |
-| `MOVIES_CHANNEL` | Your authorized-content channel username, without `@` |
-| `REPO_URL` | Your GitHub repository URL |
-| `PICS` | Optional space-separated image URLs for the welcome screen |
+| `PICS` | Space-separated image URLs for the start screen |
+| `INDEX_REQ_CHANNEL` | Defaults to `LOG_CHANNEL` |
+| `FILE_STORE_CHANNEL` | Optional file-store channel IDs |
+| `AUTO_DELETE_SECONDS` | Auto-delete delay in seconds |
+| `IMDB` | `True` or `False` |
+| `SPELL_CHECK_REPLY` | `True` or `False` |
 
-## Deploy on Render
-1. Push the extracted project folder to your GitHub repository.
-2. In Render choose **New + → Background Worker** (or create a Docker service if your account UI offers it).
-3. Connect the GitHub repository and choose the branch.
-4. Select Docker deployment (the included `Dockerfile`).
-5. Add the environment variables listed above.
-6. Deploy and inspect the logs.
+## Local run
+Use Python 3.10+ where possible, install dependencies, set the environment variables, then run:
 
-## Deploy on Koyeb
-1. Create an App and choose GitHub as the source.
-2. Select this repository and branch.
-3. Choose Dockerfile deployment.
-4. Add the same environment variables.
-5. Deploy and inspect runtime logs.
+```bash
+pip install -r requirements.txt
+python bot.py
+```
 
-## Before first launch
-- Replace the placeholder Telegram usernames in the environment variables with your real channels.
-- Add the bot as admin to the required log/catalogue channels.
-- Keep `.env`, tokens, API hashes, and MongoDB credentials out of GitHub.
-- Check the upstream license before redistributing modified copies.
+The included Dockerfile is used by Render's Docker worker deployment.
+
+## Credits and license
+This repository is a customization of the upstream open-source project [AwesomeFilterPro by TamilanBotsZ](https://github.com/TamilanBotsZ/AwesomeFilterPro), which itself includes upstream components and credits. Original license and attribution files are retained. Please review `LICENSE` before redistributing or modifying the project.
