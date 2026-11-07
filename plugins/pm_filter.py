@@ -106,13 +106,13 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton('🔋 Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔋', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez')
         ]
     )
     btn.insert(1, 
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/RudraMoviez'),
+            InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/RMdveloper4')
         ]
     )
    
@@ -440,11 +440,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url=f'https://t.me/{UPDATE_CHANNEL}'),
-            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url=f'https://t.me/{MOVIES_CHANNEL}')
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
+            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl')
             ],[
-            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url=REPO_URL),
+            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
+            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
             ],[
             InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
             ],[
@@ -476,10 +476,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🙄 ᴏᴡɴᴇʀ 🙄', url=f'https://t.me/{OWNER_USERNAME}'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url=f'https://t.me/{UPDATE_CHANNEL}'),
+            InlineKeyboardButton('🙄 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🙄', url='https://t.me/RMdveloper4'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
         ],[
-            InlineKeyboardButton('👩‍💻 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 👩‍💻', url=REPO_URL), #Please Change your bot username
+            InlineKeyboardButton('👩‍💻 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 👩‍💻', url='https://github.com/official46-rm/MoviesCorner'), #Please Change your bot username
             InlineKeyboardButton('😍 sʜᴀʀᴇ ᴍᴇ 😍', url=f'https://t.me/share/url?url=t.me/{temp.U_NAME}'),
         ],[
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ 🔐', callback_data='close_data')
@@ -713,7 +713,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('🔋 Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🔋', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez')
         ]
     )
     if offset != "":

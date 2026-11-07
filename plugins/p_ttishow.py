@@ -1,7 +1,7 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, UPDATE_CHANNEL, MELCOW_NEW_USERS
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Hᴇʟᴘ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url=f'https://t.me/{UPDATE_CHANNEL}')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url='https://t.me/RudraMovies4')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(

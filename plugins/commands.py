@@ -8,7 +8,7 @@ from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
 from database.users_chats_db import db
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, UPDATE_CHANNEL, MOVIES_CHANNEL, SUPPORT_CHAT, REPO_URL
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT
 from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 from database.connections_mdb import active_connection
 import re
@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url=f'https://t.me/{UPDATE_CHANNEL}'),
+                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
             ],
             [
                 InlineKeyboardButton('ℹ️ ʜᴇʟᴘ ℹ️', url=f'https://t.me/{temp.U_NAME}?start=help')
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url=f'https://t.me/{UPDATE_CHANNEL}'),
-            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url=f'https://t.me/{MOVIES_CHANNEL}'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
+            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl'),
             ],[
-            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url=REPO_URL),
+            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
+            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
             ],[
             InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
             ],[
@@ -94,11 +94,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true'),
             ],[
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url=f'https://t.me/{UPDATE_CHANNEL}'),
-            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url=f'https://t.me/{MOVIES_CHANNEL}'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs 🤖', url='https://t.me/RudraMovies4'),
+            InlineKeyboardButton('💥 ᴍᴏᴠɪᴇs ♥️', url='https://t.me/+uMyc8ujUr3QzZTZl'),
             ],[
-            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url=f'https://t.me/{SUPPORT_CHAT}'),
-            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url=REPO_URL),
+            InlineKeyboardButton('💞 sᴜᴘᴘᴏʀᴛ 💞', url='https://t.me/RudraMoviez'),
+            InlineKeyboardButton('👩‍💻 ʀᴇᴘᴏ ✨', url='https://github.com/official46-rm/MoviesCorner'),
             ],[
             InlineKeyboardButton('👋 ᴇxᴛʀᴀ ʙᴜᴛᴛᴏɴs 👋', callback_data='about'),
             ],[
